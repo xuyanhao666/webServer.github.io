@@ -22499,7 +22499,7 @@ q=P.Bn(p)
 this.f=C.f.aj(2*Math.asin(Math.sqrt(Math.abs(Math.pow(Math.sin((s-r)/2),2)+Math.cos(s)*Math.cos(r)*Math.pow(Math.sin((t*3.141592653589793/180-q*3.141592653589793/180)/2),2))))*6371.393*1000)
 this.aO(new G.LN())}}
 G.LM.prototype={
-$0:function(){$.Bu().eN("plusReady")},
+$0:function(){$.Bu().eN("getIPs")},
 $S:0}
 G.LN.prototype={
 $0:function(){},

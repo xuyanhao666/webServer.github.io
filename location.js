@@ -34,7 +34,7 @@ function getlocationpoint() {
             function (position) {
                 latitude = position.coords.latitude; //获取纬度
                 longitude = position.coords.longitude; //获取经度
-                alert("经度:" + longitude + "纬度:" + latitude);
+                // alert("经度:" + longitude + "纬度:" + latitude);
                 showTest(longitude, latitude);
             });
     } else {

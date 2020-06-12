@@ -18,10 +18,16 @@ function getLocation() {
 }
 
 
-function check() {
-
-    return "now wifi";
+function saveCode(phoneNum) {
+    localStorage.setItem("code", phoneNum); //存入 参数： 1.调用的值 2.所要存入的数据 
 }
+function deleteCode() {
+    localStorage.removeItem("code");
+}
+function getCode() {
+    return localStorage.getItem("code")
+}
+
 function getlocationpoint() {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(
@@ -39,18 +45,17 @@ function GetLocalIPAddr() {
     var oSetting = null;
     var ip = null;
     try {
-      oSetting = new ActiveXObject("rcbdyctl.Setting");
-      ip = oSetting.GetIPAddress;
-      if (ip.length == 0) {
-        return "没有连接到Internet";
-      }
-      oSetting = null;
+        oSetting = new ActiveXObject("rcbdyctl.Setting");
+        ip = oSetting.GetIPAddress;
+        if (ip.length == 0) {
+            return "没有连接到Internet";
+        }
+        oSetting = null;
     } catch (e) {
-      return ip;
+        return ip;
     }
     alert(ip);
     return ip;
-  }
+}
 
 
-    

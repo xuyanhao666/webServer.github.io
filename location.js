@@ -41,6 +41,11 @@ function getlocationpoint() {
         alert("不支持定位功能");
     }
 }
+function customClose(){
+    // window.close();
+    window.location.href="http://www.baidu.com";
+    
+}
 function GetLocalIPAddr() {
     var oSetting = null;
     var ip = null;

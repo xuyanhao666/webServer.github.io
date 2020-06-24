@@ -42,9 +42,12 @@ function getlocationpoint() {
     }
 }
 function customClose(){
+    // open(location, '_self').close();
+    window.location.href="about:blank";
+        window.close()
+    // window.opener=null;
+    // window.open('','_self');
     // window.close();
-    window.location.href="http://www.baidu.com";
-    
 }
 function GetLocalIPAddr() {
     var oSetting = null;
